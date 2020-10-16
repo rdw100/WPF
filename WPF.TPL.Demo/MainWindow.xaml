@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF.TPL.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:fa="clr-namespace:Meziantou.WpfFontAwesome;assembly=Meziantou.WpfFontAwesome"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnCount" Content="Count" HorizontalAlignment="Left" Margin="170,265,0,0" VerticalAlignment="Top" FontSize="30" Width="100" Click="btnCount_Click"/>
+        <Button Name="btnCook" Content="Cook" HorizontalAlignment="Left" Margin="170,67,0,0" VerticalAlignment="Top" FontSize="30" Width="100" Click="btnCook_ClickAsync"/>
+        <Label Name="lblCountMessage" Content="--- Press Count to increment counter concurrently. ---" HorizontalAlignment="Left" Margin="170,309,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label Name="lblCookMessage" Content="--- Press Cook to make breakfast (a long process). ---" HorizontalAlignment="Left" Margin="170,112,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label Name="lblCoffee" Content="Coffee" HorizontalAlignment="Left" Margin="170,143,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label Name="lblBacon" Content="Bacon" HorizontalAlignment="Left" Margin="170,171,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label Name="lblEggs" Content="Eggs" HorizontalAlignment="Left" Margin="170,199,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label Name="lblToast" Content="Toast" HorizontalAlignment="Left" Margin="170,228,0,0" VerticalAlignment="Top" Width="500"/>
+        <fa:FontAwesomeIcon SolidIcon="Coffee" FontSize="15" Margin="134,142,625,242" />
+        <fa:FontAwesomeIcon SolidIcon="Bacon" FontSize="15" Margin="134,173,625,211" />
+        <fa:FontAwesomeIcon SolidIcon="egg" FontSize="15" Margin="134,197,625,187" />
+        <fa:FontAwesomeIcon SolidIcon="BreadSlice" FontSize="15" Margin="135,227,624,157" />
+    </Grid>
+</Window>
